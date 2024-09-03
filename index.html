@@ -1,0 +1,321 @@
+<?php
+
+$conn = mysqli_connect('localhost','root','','contact_db') or die('connection failed');
+
+if(isset($_POST['send'])){
+
+   $name = mysqli_real_escape_string($conn, $_POST['name']);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Complete Responsive Personal Portfolio Website Design</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+   <!-- aos css link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+
+<!-- header section starts  -->
+<a href="#home" class="logo">Portfolio</a>
+
+<header class="header">
+
+   <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+
+   
+   <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#services">services</a>
+      <a href="#portfolio">portfolio</a>
+      <a href="#contact">contact</a>
+   </nav>
+
+   <!-- <div class="follow">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-github"></a>
+   </div> -->
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="image" data-aos="fade-right">
+      <img src="images/user-img.jpg" alt="">
+   </div>
+
+   <div class="content">
+      <h3 data-aos="fade-up">hi, i am Rohila</h3>
+      <span data-aos="fade-up">web designer & developer</span>
+      <p data-aos="fade-up"> A seasoned MERN Stack Developer with 1 years of hands-on experience in designing and building dynamic, high-performance web applications. My expertise spans across MongoDB, Express.js, React, and Node.js. With a strong foundation in both front-end and back-end technologies, I’m committed to delivering seamless user experiences and driving impactful results.</p>
+      <a data-aos="fade-up" href="#about" class="btn">about me</a>
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading" data-aos="fade-up"> <span>biography</span> </h1>
+
+   <div class="biography">
+
+      <p data-aos="fade-up"> I specialize in building efficient, scalable web solutions that deliver exceptional user experiences. My goal is to bring ideas to life through clean, efficient code.</p>
+
+      <div class="bio">
+         <h3 data-aos="zoom-in"> <span>name : </span> Rohila </h3>
+         <h3 data-aos="zoom-in"> <span>email : </span> rohilaataaaj@gmail.com </h3>
+         <h3 data-aos="zoom-in"> <span>address : </span> Mirpur Azad Kashmir </h3>
+         
+         <h3 data-aos="zoom-in"> <span>age : </span> 22 years </h3>
+         <h3 data-aos="zoom-in"> <span>experience : </span> 1 years </h3>
+      </div>
+
+      <a href="#" class="btn" data-aos="fade-up">download CV</a>
+
+   </div>
+   
+   <div class="skills" data-aos="fade-up">
+
+      <h1 class="heading"> <span>skills</span> </h1>
+
+      <div class="progress">
+         <div class="bar" data-aos="fade-left"> <h3><span>HTML</span> <span>95%</span></h3> </div>
+         <div class="bar" data-aos="fade-right"> <h3><span>CSS</span> <span>80%</span></h3> </div>
+         <div class="bar" data-aos="fade-left"> <h3><span>JavaScript</span> <span>65%</span></h3> </div>
+         <div class="bar" data-aos="fade-right"> <h3><span>PHP</span> <span>80%</span></h3> </div>
+      </div>
+
+   </div>
+
+   <div class="edu-exp">
+
+      <h1 class="heading" data-aos="fade-up"> <span>education & experience</span> </h1>
+
+      <div class="row">
+
+         <div class="box-container">
+
+            <h3 class="title" data-aos="fade-right">education</h3>
+
+            <div class="box" data-aos="fade-right">
+               <span>( 2023 - 2024 )</span>
+               <h3>web designer</h3>
+               <p>With a year of experience in web design, I've created visually appealing and user-friendly websites tailored to client needs. My work involves designing responsive layouts, optimizing user experience, and ensuring brand consistency across all digital platforms. I've also collaborated closely with developers to bring design concepts to life.</p>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+               <span>( 2023 - 2024 )</span>
+               <h3>web developer</h3>
+               <p>I have developed and maintained dynamic websites, focusing on both front-end and back-end development. My skills include creating responsive designs, optimizing website performance, and ensuring seamless user experiences. I have worked on integrating various web technologies to build scalable and efficient web applications.</p>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+               <span>( 2023 - 2024 )</span>
+               <h3>Wordpress designer</h3>
+               <p>Over the past year, I’ve gained hands-on experience in developing and customizing WordPress websites, including theme and plugin development. I’ve worked on optimizing website performance, implementing SEO strategies, and ensuring responsive design. My role also involved providing technical support and managing website maintenance.</p>
+            </div>
+
+         </div>
+
+         <div class="box-container">
+
+            <h3 class="title" data-aos="fade-left">experience</h3>
+
+            <div class="box" data-aos="fade-left">
+               <span>( 2023 - 2024 )</span>
+               <h3>front-end developer</h3>
+               <p>With a year of experience as a front-end developer, I specialize in building responsive, user-friendly interfaces using HTML, CSS, and JavaScript. I focus on creating seamless user experiences and translating design mockups into interactive, functional web pages. My work also involves optimizing performance and ensuring cross-browser compatibility.
+
+               </p>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+               <span>( 2023 - 2024 )</span>
+               <h3>back-end developer</h3>
+               <p> My expertise includes working with databases, APIs, and server management, ensuring that web applications are secure, efficient, and perform well under load. I’m skilled in integrating front-end and back-end systems to deliver seamless functionality.
+
+               </p>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+               <span>( 2023 - 2024 )</span>
+               <h3>MERN-stack developer</h3>
+               <p> I have worked on building and maintaining full-stack web applications using MongoDB, Express.js, React, and Node.js. I specialize in creating responsive, high-performance applications with a focus on both front-end and back-end development. My experience includes developing RESTful APIs, managing databases, and ensuring seamless integration across the stack.
+
+               </p>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+   <h1 class="heading" data-aos="fade-up"> <span>services</span> </h1>
+
+   <div class="box-container">
+
+      <div class="box" data-aos="zoom-in">
+         <!-- <i class="fas fa-code"></i> -->
+         <h3>web development</h3>
+         <p>I build websites that are not only visually stunning but also highly functional and optimized for performance. From e-commerce platforms to custom web applications, I create solutions tailored to meet your unique business needs. Let us help you stand out online and achieve your goals with a website that drives results."</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <!-- <i class="fas fa-paint-brush"></i> -->
+         <h3>Wordpress Design</h3>
+         <p> My goal create stunning, responsive websites that are easy to manage and tailored to your brand's unique identity.  We create custom, responsive, and user-friendly websites tailored to your brand’s unique needs. Let us bring your vision to life with a design that captivates and converts.</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <!-- <i class="fab fa-bootstrap"></i> -->
+         <h3>bootstrap</h3>
+         <p>We create responsive, mobile-first designs that ensure your site looks great on any device. Whether you're building a new site or revamping an existing one, our Bootstrap expertise delivers sleek, fast, and user-friendly web experiences that engage your audience."</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <!-- <i class="fas fa-chart-line"></i> -->
+         <h3>seo marketing</h3>
+         <p> We optimize your site with targeted keywords, high-quality content, and technical SEO to improve search engine rankings and drive organic traffic. Let us help you reach the top of search results and connect with your ideal audience."</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <!-- <i class="fas fa-bullhorn"></i> -->
+         <h3>digital marketing</h3>
+         <p>. From SEO and content marketing to social media management and PPC campaigns, we tailor strategies to drive traffic, increase engagement, and grow your brand. Let us help you connect with your audience and achieve your business goals."</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <!-- <i class="fab fa-wordpress"></i> -->
+         <h3>wordpress</h3>
+         <p> We specialize in custom theme development, plugin integration, and responsive design to create a site that reflects your brand and engages your audience. Whether you need a new website, ongoing maintenance, or optimization, we ensure your WordPress site runs smoothly and effectively."</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+   <h1 class="heading" data-aos="fade-up"> <span>portfolio</span> </h1>
+
+   <div class="box-container">
+
+      <div class="box" data-aos="zoom-in">
+         <a href="https://careerclimbinstitute.com/">
+            <img src="images/img-1.jpg" alt="">
+            <h3>web development</h3>
+            <span>(2023-24)</span>
+         </a>
+      </div>
+      
+   </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading" data-aos="fade-up"> <span>contact me</span> </h1>
+
+   <form action="" method="post">
+      <div class="flex">
+         <input data-aos="fade-right" type="text" name="name" placeholder="enter your name" class="box" required>
+         <input data-aos="fade-left" type="email" name="email" placeholder="enter your password" class="box" required>
+         <input data-aos="fade-left" type="datetime" name="email" placeholder="enter date and time" class="box" required>
+      </div>
+      <input data-aos="fade-up" type="number" min="0" name="number" placeholder="enter your number" class="box" required>
+      <textarea data-aos="fade-up" name="message" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
+      <input type="submit" data-aos="zoom-in" value="send message" name="send" class="btn">
+   </form>
+
+   <div class="box-container">
+
+      
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <p>rohilaataaaj@gmail.com</p>
+      </div>
+
+      <div class="box" data-aos="zoom-in">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>address</h3>
+         <p>Mirpur Ajk</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>Rohila</span> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- aos js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+   AOS.init({
+      duration:800,
+      delay:300
+   });
+
+</script>
+   
+</body>
+</html>
